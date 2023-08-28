@@ -1,6 +1,3 @@
-﻿
-//Relfection in C#
-
 using System;
 
 public class Employee
