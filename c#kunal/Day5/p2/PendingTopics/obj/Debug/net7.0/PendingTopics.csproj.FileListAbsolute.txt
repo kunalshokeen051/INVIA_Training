@@ -1,0 +1,15 @@
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day5\p2\PendingTopics\obj\Debug\net7.0\PendingTopics.csproj.AssemblyReference.cache
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day5\p2\PendingTopics\obj\Debug\net7.0\PendingTopics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day5\p2\PendingTopics\obj\Debug\net7.0\PendingTopics.AssemblyInfoInputs.cache
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day5\p2\PendingTopics\obj\Debug\net7.0\PendingTopics.AssemblyInfo.cs
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day5\p2\PendingTopics\obj\Debug\net7.0\PendingTopics.csproj.CoreCompileInputs.cache
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day5\p2\PendingTopics\bin\Debug\net7.0\PendingTopics.exe
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day5\p2\PendingTopics\bin\Debug\net7.0\PendingTopics.deps.json
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day5\p2\PendingTopics\bin\Debug\net7.0\PendingTopics.runtimeconfig.json
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day5\p2\PendingTopics\bin\Debug\net7.0\PendingTopics.dll
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day5\p2\PendingTopics\bin\Debug\net7.0\PendingTopics.pdb
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day5\p2\PendingTopics\obj\Debug\net7.0\PendingTopics.dll
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day5\p2\PendingTopics\obj\Debug\net7.0\refint\PendingTopics.dll
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day5\p2\PendingTopics\obj\Debug\net7.0\PendingTopics.pdb
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day5\p2\PendingTopics\obj\Debug\net7.0\PendingTopics.genruntimeconfig.cache
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day5\p2\PendingTopics\obj\Debug\net7.0\ref\PendingTopics.dll

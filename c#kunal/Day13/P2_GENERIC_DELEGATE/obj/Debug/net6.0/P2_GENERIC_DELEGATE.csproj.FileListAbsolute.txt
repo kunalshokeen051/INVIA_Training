@@ -1,0 +1,15 @@
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_GENERIC_DELEGATE\bin\Debug\net6.0\P2_GENERIC_DELEGATE.exe
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_GENERIC_DELEGATE\bin\Debug\net6.0\P2_GENERIC_DELEGATE.deps.json
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_GENERIC_DELEGATE\bin\Debug\net6.0\P2_GENERIC_DELEGATE.runtimeconfig.json
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_GENERIC_DELEGATE\bin\Debug\net6.0\P2_GENERIC_DELEGATE.dll
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_GENERIC_DELEGATE\bin\Debug\net6.0\P2_GENERIC_DELEGATE.pdb
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_GENERIC_DELEGATE\obj\Debug\net6.0\P2_GENERIC_DELEGATE.csproj.AssemblyReference.cache
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_GENERIC_DELEGATE\obj\Debug\net6.0\P2_GENERIC_DELEGATE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_GENERIC_DELEGATE\obj\Debug\net6.0\P2_GENERIC_DELEGATE.AssemblyInfoInputs.cache
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_GENERIC_DELEGATE\obj\Debug\net6.0\P2_GENERIC_DELEGATE.AssemblyInfo.cs
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_GENERIC_DELEGATE\obj\Debug\net6.0\P2_GENERIC_DELEGATE.csproj.CoreCompileInputs.cache
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_GENERIC_DELEGATE\obj\Debug\net6.0\P2_GENERIC_DELEGATE.dll
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_GENERIC_DELEGATE\obj\Debug\net6.0\refint\P2_GENERIC_DELEGATE.dll
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_GENERIC_DELEGATE\obj\Debug\net6.0\P2_GENERIC_DELEGATE.pdb
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_GENERIC_DELEGATE\obj\Debug\net6.0\P2_GENERIC_DELEGATE.genruntimeconfig.cache
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_GENERIC_DELEGATE\obj\Debug\net6.0\ref\P2_GENERIC_DELEGATE.dll

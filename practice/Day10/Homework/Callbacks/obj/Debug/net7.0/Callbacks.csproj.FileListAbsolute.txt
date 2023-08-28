@@ -1,0 +1,14 @@
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Callbacks\obj\Debug\net7.0\Callbacks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Callbacks\obj\Debug\net7.0\Callbacks.AssemblyInfoInputs.cache
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Callbacks\obj\Debug\net7.0\Callbacks.AssemblyInfo.cs
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Callbacks\obj\Debug\net7.0\Callbacks.csproj.CoreCompileInputs.cache
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Callbacks\bin\Debug\net7.0\Callbacks.exe
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Callbacks\bin\Debug\net7.0\Callbacks.deps.json
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Callbacks\bin\Debug\net7.0\Callbacks.runtimeconfig.json
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Callbacks\bin\Debug\net7.0\Callbacks.dll
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Callbacks\bin\Debug\net7.0\Callbacks.pdb
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Callbacks\obj\Debug\net7.0\Callbacks.dll
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Callbacks\obj\Debug\net7.0\refint\Callbacks.dll
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Callbacks\obj\Debug\net7.0\Callbacks.pdb
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Callbacks\obj\Debug\net7.0\Callbacks.genruntimeconfig.cache
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Callbacks\obj\Debug\net7.0\ref\Callbacks.dll

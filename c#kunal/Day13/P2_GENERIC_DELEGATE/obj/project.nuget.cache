@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "MDEsfTxZQ82Bk8g1fr9mrlAhKNKWmnOC2ec6nHvwMK8jTk43nS3NRfhEFjeXzIAaN1qKBA1xRvFdIxiEhZYd/A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kunal\\Desktop\\INVIA\\c#kunal\\Day13\\P2_GENERIC_DELEGATE\\P2_GENERIC_DELEGATE.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kunal\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.21\\microsoft.windowsdesktop.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\kunal\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.21\\microsoft.netcore.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\kunal\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.21\\microsoft.aspnetcore.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\kunal\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.21\\microsoft.netcore.app.host.win-x64.6.0.21.nupkg.sha512"
+  ],
+  "logs": []
+}

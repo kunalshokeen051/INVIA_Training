@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "P2_GENERIC_DELEGATE/1.0.0": {
+        "runtime": {
+          "P2_GENERIC_DELEGATE.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "P2_GENERIC_DELEGATE/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

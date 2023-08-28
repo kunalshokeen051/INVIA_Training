@@ -1,0 +1,15 @@
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_PRE-BUILD_DELEGATES\bin\Debug\net6.0\P2_PRE-BUILD_DELEGATES.exe
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_PRE-BUILD_DELEGATES\bin\Debug\net6.0\P2_PRE-BUILD_DELEGATES.dll
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_PRE-BUILD_DELEGATES\obj\Debug\net6.0\P2_PRE-BUILD_DELEGATES.csproj.AssemblyReference.cache
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_PRE-BUILD_DELEGATES\obj\Debug\net6.0\P2_PRE-BUILD_DELEGATES.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_PRE-BUILD_DELEGATES\obj\Debug\net6.0\P2_PRE-BUILD_DELEGATES.AssemblyInfoInputs.cache
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_PRE-BUILD_DELEGATES\obj\Debug\net6.0\P2_PRE-BUILD_DELEGATES.AssemblyInfo.cs
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_PRE-BUILD_DELEGATES\obj\Debug\net6.0\P2_PRE-BUILD_DELEGATES.csproj.CoreCompileInputs.cache
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_PRE-BUILD_DELEGATES\obj\Debug\net6.0\P2_PRE-BUILD_DELEGATES.dll
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_PRE-BUILD_DELEGATES\obj\Debug\net6.0\refint\P2_PRE-BUILD_DELEGATES.dll
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_PRE-BUILD_DELEGATES\obj\Debug\net6.0\P2_PRE-BUILD_DELEGATES.pdb
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_PRE-BUILD_DELEGATES\bin\Debug\net6.0\P2_PRE-BUILD_DELEGATES.deps.json
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_PRE-BUILD_DELEGATES\bin\Debug\net6.0\P2_PRE-BUILD_DELEGATES.runtimeconfig.json
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_PRE-BUILD_DELEGATES\bin\Debug\net6.0\P2_PRE-BUILD_DELEGATES.pdb
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_PRE-BUILD_DELEGATES\obj\Debug\net6.0\P2_PRE-BUILD_DELEGATES.genruntimeconfig.cache
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P2_PRE-BUILD_DELEGATES\obj\Debug\net6.0\ref\P2_PRE-BUILD_DELEGATES.dll

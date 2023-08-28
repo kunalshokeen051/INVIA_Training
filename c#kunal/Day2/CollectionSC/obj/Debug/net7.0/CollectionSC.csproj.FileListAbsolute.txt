@@ -1,0 +1,15 @@
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day2\CollectionSC\obj\Debug\net7.0\CollectionSC.csproj.AssemblyReference.cache
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day2\CollectionSC\obj\Debug\net7.0\CollectionSC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day2\CollectionSC\obj\Debug\net7.0\CollectionSC.AssemblyInfoInputs.cache
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day2\CollectionSC\obj\Debug\net7.0\CollectionSC.AssemblyInfo.cs
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day2\CollectionSC\obj\Debug\net7.0\CollectionSC.csproj.CoreCompileInputs.cache
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day2\CollectionSC\bin\Debug\net7.0\CollectionSC.exe
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day2\CollectionSC\bin\Debug\net7.0\CollectionSC.deps.json
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day2\CollectionSC\bin\Debug\net7.0\CollectionSC.runtimeconfig.json
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day2\CollectionSC\bin\Debug\net7.0\CollectionSC.dll
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day2\CollectionSC\bin\Debug\net7.0\CollectionSC.pdb
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day2\CollectionSC\obj\Debug\net7.0\CollectionSC.dll
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day2\CollectionSC\obj\Debug\net7.0\refint\CollectionSC.dll
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day2\CollectionSC\obj\Debug\net7.0\CollectionSC.pdb
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day2\CollectionSC\obj\Debug\net7.0\CollectionSC.genruntimeconfig.cache
+C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day2\CollectionSC\obj\Debug\net7.0\ref\CollectionSC.dll

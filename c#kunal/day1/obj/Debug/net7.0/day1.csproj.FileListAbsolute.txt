@@ -1,0 +1,15 @@
+C:\c#kunal\day1\bin\Debug\net7.0\day1.exe
+C:\c#kunal\day1\bin\Debug\net7.0\day1.deps.json
+C:\c#kunal\day1\bin\Debug\net7.0\day1.runtimeconfig.json
+C:\c#kunal\day1\bin\Debug\net7.0\day1.dll
+C:\c#kunal\day1\bin\Debug\net7.0\day1.pdb
+C:\c#kunal\day1\obj\Debug\net7.0\day1.csproj.AssemblyReference.cache
+C:\c#kunal\day1\obj\Debug\net7.0\day1.GeneratedMSBuildEditorConfig.editorconfig
+C:\c#kunal\day1\obj\Debug\net7.0\day1.AssemblyInfoInputs.cache
+C:\c#kunal\day1\obj\Debug\net7.0\day1.AssemblyInfo.cs
+C:\c#kunal\day1\obj\Debug\net7.0\day1.csproj.CoreCompileInputs.cache
+C:\c#kunal\day1\obj\Debug\net7.0\day1.dll
+C:\c#kunal\day1\obj\Debug\net7.0\refint\day1.dll
+C:\c#kunal\day1\obj\Debug\net7.0\day1.pdb
+C:\c#kunal\day1\obj\Debug\net7.0\day1.genruntimeconfig.cache
+C:\c#kunal\day1\obj\Debug\net7.0\ref\day1.dll

@@ -1,0 +1,18 @@
+When we go for development the application
+
+1. The application must support layering Architecture.
+
+** 2. Every layer should written in library like package in java or module on Node.js.
+
+* 3. What is the syntax to create library 
+
+4. How to take the reference of any given library(Models, Service should not be a folder).
+
+5. The benefit of making a library is to acheive reusability so that you can take the reference in any given project.
+
+Remarks: 5/10
+
+-------------------------------------------------
+Case Study-2
+
+Create new application for same case study based on library.

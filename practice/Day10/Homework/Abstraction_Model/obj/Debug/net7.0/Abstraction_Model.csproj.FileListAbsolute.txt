@@ -1,0 +1,15 @@
+C:\Users\Invia-ILC\Desktop\INVIA\practice\Day9\Homework\Abstraction_Model\bin\Debug\net7.0\Abstraction_Model.exe
+C:\Users\Invia-ILC\Desktop\INVIA\practice\Day9\Homework\Abstraction_Model\bin\Debug\net7.0\Abstraction_Model.deps.json
+C:\Users\Invia-ILC\Desktop\INVIA\practice\Day9\Homework\Abstraction_Model\bin\Debug\net7.0\Abstraction_Model.runtimeconfig.json
+C:\Users\Invia-ILC\Desktop\INVIA\practice\Day9\Homework\Abstraction_Model\bin\Debug\net7.0\Abstraction_Model.dll
+C:\Users\Invia-ILC\Desktop\INVIA\practice\Day9\Homework\Abstraction_Model\bin\Debug\net7.0\Abstraction_Model.pdb
+C:\Users\Invia-ILC\Desktop\INVIA\practice\Day9\Homework\Abstraction_Model\obj\Debug\net7.0\Abstraction_Model.csproj.AssemblyReference.cache
+C:\Users\Invia-ILC\Desktop\INVIA\practice\Day9\Homework\Abstraction_Model\obj\Debug\net7.0\Abstraction_Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Invia-ILC\Desktop\INVIA\practice\Day9\Homework\Abstraction_Model\obj\Debug\net7.0\Abstraction_Model.AssemblyInfoInputs.cache
+C:\Users\Invia-ILC\Desktop\INVIA\practice\Day9\Homework\Abstraction_Model\obj\Debug\net7.0\Abstraction_Model.AssemblyInfo.cs
+C:\Users\Invia-ILC\Desktop\INVIA\practice\Day9\Homework\Abstraction_Model\obj\Debug\net7.0\Abstraction_Model.csproj.CoreCompileInputs.cache
+C:\Users\Invia-ILC\Desktop\INVIA\practice\Day9\Homework\Abstraction_Model\obj\Debug\net7.0\Abstraction_Model.dll
+C:\Users\Invia-ILC\Desktop\INVIA\practice\Day9\Homework\Abstraction_Model\obj\Debug\net7.0\refint\Abstraction_Model.dll
+C:\Users\Invia-ILC\Desktop\INVIA\practice\Day9\Homework\Abstraction_Model\obj\Debug\net7.0\Abstraction_Model.pdb
+C:\Users\Invia-ILC\Desktop\INVIA\practice\Day9\Homework\Abstraction_Model\obj\Debug\net7.0\Abstraction_Model.genruntimeconfig.cache
+C:\Users\Invia-ILC\Desktop\INVIA\practice\Day9\Homework\Abstraction_Model\obj\Debug\net7.0\ref\Abstraction_Model.dll

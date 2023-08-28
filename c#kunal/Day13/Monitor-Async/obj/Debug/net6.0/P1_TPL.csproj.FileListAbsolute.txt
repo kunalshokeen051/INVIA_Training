@@ -1,0 +1,15 @@
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P1_TPL\bin\Debug\net6.0\P1_TPL.exe
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P1_TPL\bin\Debug\net6.0\P1_TPL.deps.json
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P1_TPL\bin\Debug\net6.0\P1_TPL.runtimeconfig.json
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P1_TPL\bin\Debug\net6.0\P1_TPL.dll
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P1_TPL\bin\Debug\net6.0\P1_TPL.pdb
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P1_TPL\obj\Debug\net6.0\P1_TPL.csproj.AssemblyReference.cache
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P1_TPL\obj\Debug\net6.0\P1_TPL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P1_TPL\obj\Debug\net6.0\P1_TPL.AssemblyInfoInputs.cache
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P1_TPL\obj\Debug\net6.0\P1_TPL.AssemblyInfo.cs
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P1_TPL\obj\Debug\net6.0\P1_TPL.csproj.CoreCompileInputs.cache
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P1_TPL\obj\Debug\net6.0\P1_TPL.dll
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P1_TPL\obj\Debug\net6.0\refint\P1_TPL.dll
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P1_TPL\obj\Debug\net6.0\P1_TPL.pdb
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P1_TPL\obj\Debug\net6.0\P1_TPL.genruntimeconfig.cache
+C:\Users\kunal\Desktop\INVIA\c#kunal\Day13\P1_TPL\obj\Debug\net6.0\ref\P1_TPL.dll

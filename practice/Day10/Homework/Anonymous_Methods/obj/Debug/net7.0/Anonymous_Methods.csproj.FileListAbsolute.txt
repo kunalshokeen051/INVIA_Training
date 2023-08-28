@@ -1,0 +1,14 @@
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Anonymous_Methods\obj\Debug\net7.0\Anonymous_Methods.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Anonymous_Methods\obj\Debug\net7.0\Anonymous_Methods.AssemblyInfoInputs.cache
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Anonymous_Methods\obj\Debug\net7.0\Anonymous_Methods.AssemblyInfo.cs
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Anonymous_Methods\obj\Debug\net7.0\Anonymous_Methods.csproj.CoreCompileInputs.cache
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Anonymous_Methods\bin\Debug\net7.0\Anonymous_Methods.exe
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Anonymous_Methods\bin\Debug\net7.0\Anonymous_Methods.deps.json
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Anonymous_Methods\bin\Debug\net7.0\Anonymous_Methods.runtimeconfig.json
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Anonymous_Methods\bin\Debug\net7.0\Anonymous_Methods.dll
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Anonymous_Methods\bin\Debug\net7.0\Anonymous_Methods.pdb
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Anonymous_Methods\obj\Debug\net7.0\Anonymous_Methods.dll
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Anonymous_Methods\obj\Debug\net7.0\refint\Anonymous_Methods.dll
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Anonymous_Methods\obj\Debug\net7.0\Anonymous_Methods.pdb
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Anonymous_Methods\obj\Debug\net7.0\Anonymous_Methods.genruntimeconfig.cache
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Anonymous_Methods\obj\Debug\net7.0\ref\Anonymous_Methods.dll

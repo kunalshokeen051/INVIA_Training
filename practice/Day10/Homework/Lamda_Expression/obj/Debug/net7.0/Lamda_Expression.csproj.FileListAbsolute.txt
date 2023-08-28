@@ -1,0 +1,4 @@
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Lamda_Expression\obj\Debug\net7.0\Lamda_Expression.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Lamda_Expression\obj\Debug\net7.0\Lamda_Expression.AssemblyInfoInputs.cache
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Lamda_Expression\obj\Debug\net7.0\Lamda_Expression.AssemblyInfo.cs
+C:\Users\kunal\Desktop\INVIA\practice\Day9\Homework\Lamda_Expression\obj\Debug\net7.0\Lamda_Expression.csproj.CoreCompileInputs.cache
