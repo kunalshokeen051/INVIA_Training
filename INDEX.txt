@@ -1,0 +1,126 @@
+@DAY1
+ Classroom
+  P1 -- 
+  P2 -- 
+ Practice
+  P1 -- 
+  P2 --
+-------------------------------------
+@DAY2
+ Classroom
+  P1 -- 
+  P2 -- 
+ Practice
+  P1 -- 
+  P2 --
+-------------------------------------
+@DAY3
+ Classroom
+  P1 -- 
+  P2 -- 
+ Practice
+  P1 -- 
+  P2 --
+-------------------------------------
+@DAY4
+ Classroom
+  P1 -- 
+  P2 -- 
+ Practice
+  P1 -- 
+  P2 --
+-------------------------------------
+@DAY5
+ Classroom
+  P1 -- 
+  P2 -- 
+ Practice
+  P1 -- 
+  P2 --
+-------------------------------------
+@DAY6
+ Classroom
+  P1 -- 
+  P2 -- 
+ Practice
+  P1 -- 
+  P2 --
+-------------------------------------
+@DAY7
+ Classroom
+  P1 -- 
+  P2 -- 
+ Practice
+  P1 -- 
+  P2 --
+-------------------------------------
+@DAY8
+ Classroom
+  P1 -- 
+  P2 -- 
+ Practice
+  P1 -- 
+  P2 --
+-------------------------------------
+@DAY9
+ Classroom
+  P1 -- 
+  P2 -- 
+ Practice
+  P1 -- 
+  P2 --
+-------------------------------------
+@DAY10
+ Classroom
+  P1 -- 
+  P2 -- 
+ Practice
+  P1 -- 
+  P2 --
+-------------------------------------
+@DAY11
+ Classroom
+  P1 -- 
+  P2 -- 
+ Practice
+  P1 -- 
+  P2 --
+-------------------------------------
+@DAY12
+ Classroom
+  P1 -- 
+  P2 -- 
+ Practice
+  P1 -- 
+  P2 --
+-------------------------------------
+@DAY13
+ Classroom
+  P1 -- 
+  P2 -- 
+ Practice
+  P1 -- 
+  P2 --
+-------------------------------------
+@DAY14
+ Classroom
+  P1 -- 
+  P2 -- 
+ Practice
+  P1 -- 
+  P2 -- 
+-------------------------------------
+@DAY15
+ Classroom
+  P1 -- Struct Program
+  P2 -- Constructor Chaining same class
+ Practice
+  P1 -- enum
+  P2 -- ref 
+  P3 -- params
+  P4 -- out
+  P5 -- struct
+  P6 -- Dispose
+  P7 -- Finalise
+  P8 -- Exception handling  
+-------------------------------------

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "1qde0S8IjNXv+W+7eZtl8ydKs+fsbqZ1PusD5oq0Db1xkVRhS7JGG26cdH0MRnwLWX9qu87K6Ahsg2kTpinhHg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kunal\\Desktop\\INVIA_Training\\Practice_Code\\Day15\\P1\\P1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kunal\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.21\\microsoft.windowsdesktop.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\kunal\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.21\\microsoft.netcore.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\kunal\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.21\\microsoft.aspnetcore.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\kunal\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.21\\microsoft.netcore.app.host.win-x64.6.0.21.nupkg.sha512"
+  ],
+  "logs": []
+}
