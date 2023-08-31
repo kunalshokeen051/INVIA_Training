@@ -1,0 +1,15 @@
+C:\Users\kunal\Desktop\INVIA_Training\Practice_Code\Day15\P4\bin\Debug\net6.0\P4.exe
+C:\Users\kunal\Desktop\INVIA_Training\Practice_Code\Day15\P4\bin\Debug\net6.0\P4.deps.json
+C:\Users\kunal\Desktop\INVIA_Training\Practice_Code\Day15\P4\bin\Debug\net6.0\P4.runtimeconfig.json
+C:\Users\kunal\Desktop\INVIA_Training\Practice_Code\Day15\P4\bin\Debug\net6.0\P4.dll
+C:\Users\kunal\Desktop\INVIA_Training\Practice_Code\Day15\P4\bin\Debug\net6.0\P4.pdb
+C:\Users\kunal\Desktop\INVIA_Training\Practice_Code\Day15\P4\obj\Debug\net6.0\P4.csproj.AssemblyReference.cache
+C:\Users\kunal\Desktop\INVIA_Training\Practice_Code\Day15\P4\obj\Debug\net6.0\P4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kunal\Desktop\INVIA_Training\Practice_Code\Day15\P4\obj\Debug\net6.0\P4.AssemblyInfoInputs.cache
+C:\Users\kunal\Desktop\INVIA_Training\Practice_Code\Day15\P4\obj\Debug\net6.0\P4.AssemblyInfo.cs
+C:\Users\kunal\Desktop\INVIA_Training\Practice_Code\Day15\P4\obj\Debug\net6.0\P4.csproj.CoreCompileInputs.cache
+C:\Users\kunal\Desktop\INVIA_Training\Practice_Code\Day15\P4\obj\Debug\net6.0\P4.dll
+C:\Users\kunal\Desktop\INVIA_Training\Practice_Code\Day15\P4\obj\Debug\net6.0\refint\P4.dll
+C:\Users\kunal\Desktop\INVIA_Training\Practice_Code\Day15\P4\obj\Debug\net6.0\P4.pdb
+C:\Users\kunal\Desktop\INVIA_Training\Practice_Code\Day15\P4\obj\Debug\net6.0\P4.genruntimeconfig.cache
+C:\Users\kunal\Desktop\INVIA_Training\Practice_Code\Day15\P4\obj\Debug\net6.0\ref\P4.dll

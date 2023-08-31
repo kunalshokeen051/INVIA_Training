@@ -1,4 +1,3 @@
-C:\Users\kunal\Desktop\INVIA_Training\Practice_Code\Day15\P3\obj\Debug\net6.0\P3.csproj.AssemblyReference.cache
 C:\Users\kunal\Desktop\INVIA_Training\Practice_Code\Day15\P3\obj\Debug\net6.0\P3.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\kunal\Desktop\INVIA_Training\Practice_Code\Day15\P3\obj\Debug\net6.0\P3.AssemblyInfoInputs.cache
 C:\Users\kunal\Desktop\INVIA_Training\Practice_Code\Day15\P3\obj\Debug\net6.0\P3.AssemblyInfo.cs

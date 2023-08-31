@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kunal\\Desktop\\INVIA_Training\\Practice_Code\\Day15\\P3\\P3.csproj",
+      "projectUniqueName": "c:\\Users\\kunal\\Desktop\\INVIA_Training\\Practice_Code\\Day15\\P3\\P3.csproj",
       "projectName": "P3",
-      "projectPath": "C:\\Users\\kunal\\Desktop\\INVIA_Training\\Practice_Code\\Day15\\P3\\P3.csproj",
+      "projectPath": "c:\\Users\\kunal\\Desktop\\INVIA_Training\\Practice_Code\\Day15\\P3\\P3.csproj",
       "packagesPath": "C:\\Users\\kunal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kunal\\Desktop\\INVIA_Training\\Practice_Code\\Day15\\P3\\obj\\",
+      "outputPath": "c:\\Users\\kunal\\Desktop\\INVIA_Training\\Practice_Code\\Day15\\P3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kunal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -56,24 +56,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.21, 6.0.21]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.21, 6.0.21]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.21, 6.0.21]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.21, 6.0.21]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

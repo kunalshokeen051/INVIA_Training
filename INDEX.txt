@@ -124,3 +124,21 @@
   P7 -- Finalise
   P8 -- Exception handling  
 -------------------------------------
+@DAY16
+ Classroom
+  P1 --Exception Hnadling 
+  P2 -- Custom Exception Handling
+  p3 -- INTRO TO SQL
+ Practice
+  P1 -- C.R.U.D operation in SQL 
+  P2 --
+PRESENTATION TOPIC:- Generic Interface
+-------------------------------------
+@DAY17
+ Classroom
+  P1 -- 
+  P2 -- 
+ Practice
+  P1 -- 
+  P2 -- 
+-------------------------------------
