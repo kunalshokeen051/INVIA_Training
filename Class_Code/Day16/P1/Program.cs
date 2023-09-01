@@ -15,13 +15,13 @@ public class MyApp
 			Console.WriteLine(i[3]);
 		}
 		catch (DivideByZeroException ab)
-        {
-            Console.WriteLine("error message\t"+ab.Message); //Show the error message
-        }
+		{
+			Console.WriteLine("error message\t"+ab.Message); //Show the error message
+		}
 		catch (IndexOutOfRangeException a)
-        {
-            Console.WriteLine("error message\t"+a.Message); //Show the error message
-        }
+		{
+			Console.WriteLine("error message\t"+a.Message); //Show the error message
+		}
 		catch (Exception e)
 		{
 			Console.WriteLine("error message\t"+e.Message); //Show the error message
@@ -34,3 +34,14 @@ public class MyApp
 		obj.Connect();
 	}
 }
+
+
+public interface ICounter<T>
+{
+}
+Y
+
+
+
+
+public a

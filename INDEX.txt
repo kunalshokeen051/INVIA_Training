@@ -128,17 +128,17 @@
  Classroom
   P1 --Exception Hnadling 
   P2 -- Custom Exception Handling
-  p3 -- INTRO TO SQL
+  p3(SQL) -- INTRO TO SQL
  Practice
-  P1 -- C.R.U.D operation in SQL 
-  P2 --
+  P1 -- C.R.U.D operation
 PRESENTATION TOPIC:- Generic Interface
 -------------------------------------
 @DAY17
  Classroom
-  P1 -- 
-  P2 -- 
+  P1 -- Garbage collection usign Dispose
+  P2(SQL) -- Declaring variable in SQL and adding conditions
+  P3(SQL) -- Loop and Function in SQL
  Practice
-  P1 -- 
+  P1 --
   P2 -- 
 -------------------------------------
