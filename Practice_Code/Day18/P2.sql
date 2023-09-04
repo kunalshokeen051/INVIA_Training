@@ -1,0 +1,1 @@
+create proc MYPROC            -- by default return type is INT  as  begin     return 120  end  declare @t int  exec @t=myproc  print @tcreate proc addN@ad varchar(20) outputasbeginset @ad = 'Gurgaon'end declare @a varchar(20) exec addN @a output print @a

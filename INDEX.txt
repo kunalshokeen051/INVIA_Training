@@ -135,10 +135,15 @@ PRESENTATION TOPIC:- Generic Interface
 -------------------------------------
 @DAY17
  Classroom
-  P1 -- Garbage collection usign Dispose
+  P1 -- Garbage collection using Dispose
   P2(SQL) -- Declaring variable in SQL and adding conditions
   P3(SQL) -- Loop and Function in SQL
- Practice
-  P1 --
-  P2 -- 
+-------------------------------------
+@DAY18
+ Classroom
+  P1(SQL) -- Functions and Procedure
+  P2(SQL)  -- Introduction to procedure in Sql Server
+Practice
+  P1(SQL) -- Practicing Keywords:- Where clause, Group by, Like, Order by, Having
+  P2(SQL) -- Different Types of Keys in SQL
 -------------------------------------

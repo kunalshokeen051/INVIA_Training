@@ -13,3 +13,17 @@ C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day6\P1\UI\obj\Debug\net7.0\refint\UI.d
 C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day6\P1\UI\obj\Debug\net7.0\UI.pdb
 C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day6\P1\UI\obj\Debug\net7.0\UI.genruntimeconfig.cache
 C:\Users\Invia-ILC\Desktop\INVIA\c#kunal\Day6\P1\UI\obj\Debug\net7.0\ref\UI.dll
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\Day6\P1\UI\bin\Debug\net7.0\UI.exe
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\Day6\P1\UI\bin\Debug\net7.0\UI.deps.json
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\Day6\P1\UI\bin\Debug\net7.0\UI.runtimeconfig.json
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\Day6\P1\UI\bin\Debug\net7.0\UI.dll
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\Day6\P1\UI\bin\Debug\net7.0\UI.pdb
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\Day6\P1\UI\obj\Debug\net7.0\UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\Day6\P1\UI\obj\Debug\net7.0\UI.AssemblyInfoInputs.cache
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\Day6\P1\UI\obj\Debug\net7.0\UI.AssemblyInfo.cs
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\Day6\P1\UI\obj\Debug\net7.0\UI.csproj.CoreCompileInputs.cache
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\Day6\P1\UI\obj\Debug\net7.0\UI.dll
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\Day6\P1\UI\obj\Debug\net7.0\refint\UI.dll
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\Day6\P1\UI\obj\Debug\net7.0\UI.pdb
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\Day6\P1\UI\obj\Debug\net7.0\UI.genruntimeconfig.cache
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\Day6\P1\UI\obj\Debug\net7.0\ref\UI.dll

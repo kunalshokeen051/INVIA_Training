@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Invia-ILC\\Desktop\\INVIA\\c#kunal\\Day6\\P1\\UI\\UI.csproj": {}
+    "C:\\Users\\kunal\\Desktop\\INVIA_Training\\Class_Code\\Day6\\P1\\UI\\UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Invia-ILC\\Desktop\\INVIA\\c#kunal\\Day6\\P1\\UI\\UI.csproj": {
+    "C:\\Users\\kunal\\Desktop\\INVIA_Training\\Class_Code\\Day6\\P1\\UI\\UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Invia-ILC\\Desktop\\INVIA\\c#kunal\\Day6\\P1\\UI\\UI.csproj",
+        "projectUniqueName": "C:\\Users\\kunal\\Desktop\\INVIA_Training\\Class_Code\\Day6\\P1\\UI\\UI.csproj",
         "projectName": "UI",
-        "projectPath": "C:\\Users\\Invia-ILC\\Desktop\\INVIA\\c#kunal\\Day6\\P1\\UI\\UI.csproj",
-        "packagesPath": "C:\\Users\\Invia-ILC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Invia-ILC\\Desktop\\INVIA\\c#kunal\\Day6\\P1\\UI\\obj\\",
+        "projectPath": "C:\\Users\\kunal\\Desktop\\INVIA_Training\\Class_Code\\Day6\\P1\\UI\\UI.csproj",
+        "packagesPath": "C:\\Users\\kunal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kunal\\Desktop\\INVIA_Training\\Class_Code\\Day6\\P1\\UI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Invia-ILC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kunal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

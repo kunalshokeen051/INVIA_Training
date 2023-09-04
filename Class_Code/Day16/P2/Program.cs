@@ -1,7 +1,4 @@
-﻿
-using System.Runtime.InteropServices;
-
-namespace ExceptionHandlingDemo
+﻿namespace ExceptionHandlingExample
 {
 
 	public class OddNumberException : Exception
@@ -18,7 +15,7 @@ namespace ExceptionHandlingDemo
 		{
 			get
 			{
-				return "Get More Information from here: https://www.google.com/help";
+				return "Get More Information from here: https://www.Example.com/help";
 			}
 		}
 	}
@@ -45,7 +42,6 @@ namespace ExceptionHandlingDemo
 			finally
 			{
 				DateTime now = DateTime.Now;
-				Console.WriteLine(now.ToString("f", System.Globalization.CultureInfo.CreateSpecificCulture("en-US")));
 			}
 			
 		}
