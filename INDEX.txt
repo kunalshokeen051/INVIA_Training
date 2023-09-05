@@ -126,7 +126,7 @@
 -------------------------------------
 @DAY16
  Classroom
-  P1 --Exception Hnadling 
+  P1 --Exception Handling 
   P2 -- Custom Exception Handling
   p3(SQL) -- INTRO TO SQL
  Practice
@@ -142,8 +142,16 @@ PRESENTATION TOPIC:- Generic Interface
 @DAY18
  Classroom
   P1(SQL) -- Functions and Procedure
-  P2(SQL)  -- Introduction to procedure in Sql Server
+  P2(SQL) -- Introduction to procedure in Sql Server
 Practice
   P1(SQL) -- Practicing Keywords:- Where clause, Group by, Like, Order by, Having
   P2(SQL) -- Different Types of Keys in SQL
+-------------------------------------
+@DAY19
+ Classroom
+  P1 -- Partial Class in C#   ***(Most Important)
+  P2(SQL) -- Stored Procedure
+Practice
+  P1 -- Practice Program of Partial Class in C#  
+  P2(SQL) -- Switch case in SQL
 -------------------------------------

@@ -1,0 +1,11 @@
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\day19\p1\bin\Debug\net7.0\P1.deps.json
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\day19\p1\bin\Debug\net7.0\P1.dll
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\day19\p1\bin\Debug\net7.0\P1.pdb
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\day19\p1\obj\Debug\net7.0\P1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\day19\p1\obj\Debug\net7.0\P1.AssemblyInfoInputs.cache
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\day19\p1\obj\Debug\net7.0\P1.AssemblyInfo.cs
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\day19\p1\obj\Debug\net7.0\P1.csproj.CoreCompileInputs.cache
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\day19\p1\obj\Debug\net7.0\P1.dll
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\day19\p1\obj\Debug\net7.0\refint\P1.dll
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\day19\p1\obj\Debug\net7.0\P1.pdb
+C:\Users\kunal\Desktop\INVIA_Training\Class_Code\day19\p1\obj\Debug\net7.0\ref\P1.dll

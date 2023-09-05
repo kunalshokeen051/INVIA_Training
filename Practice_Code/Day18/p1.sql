@@ -1,18 +1,36 @@
-select * from Users
+use tempdb
 
-create Function AccountValidater(@usr varChar(20), @pw varChar(10))
-returns int
-as
+-- group by Keyword
+select UserName,Age
+from Users
+Group By Age,UserName
+
+-- order by Keyword
+select UserName,Age
+from Users
+Group By Age,UserName
+Order by Age DESC  
+--use either ASC or DESC to sort in ascending or descending order
+
+
+--If exist Keyword (Return type boolean)
+if exists (select * from Users where userName = 'kunal')
 begin
- if exist (select * from Users where UserName = @usr and Pwd = @pw)
- begin
- print 'You are SuccessFully logged in'
- end
- else
- begin
- print 'User not found'
- end
-
+print 'User Exists'
+End
+Else
+begin
+insert into Users(UserName, Pwd, Age) values ('Kunal',12345 ,23)
 end
 
-select dbo.AccountValidater('kunal',12345)  
+--Like operator
+select * from users 
+where UserName Like 'k%' OR UserName Like '%k'
+-- % for Multi-character and _ for single character
+
+--having operator in sql
+select UserName,Age
+from Users
+Group By Age,UserName
+Having Age < 30
+Order by Age DESC
