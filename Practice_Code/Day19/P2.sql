@@ -84,7 +84,7 @@ as
 
 
  -- Calling Stored Procedure Using Switch CASE statements
-DECLARE @Flag int = 3, @sql VARCHAR(MAX)
+DECLARE @Flag int = 1, @sql VARCHAR(MAX)
 SET @sql = CASE @Flag
   WHEN 1 THEN 'Add'
   WHEN 2 THEN 'Update'

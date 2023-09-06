@@ -154,4 +154,5 @@ Practice
 Practice
   P1 -- Practice Program of Partial Class in C#  
   P2(SQL) -- Switch case in SQL
+  P3(SQL) -- Returning Table through a function
 -------------------------------------
