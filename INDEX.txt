@@ -156,3 +156,10 @@ Practice
   P2(SQL) -- Switch case in SQL
   P3(SQL) -- Returning Table through a function
 -------------------------------------
+@DAY20
+ Classroom
+  P1 -- 
+  P2(SQL) -- 
+Practice
+  P1 -- Passing Interface as a constructor Parameter
+-------------------------------------
