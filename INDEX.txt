@@ -149,7 +149,7 @@ Practice
 -------------------------------------
 @DAY19
  Classroom
-  P1 -- Partial Class in C#   ***(Most Important)
+  P1 -- Partial Class in C#   **(Most Important)
   P2(SQL) -- Stored Procedure
 Practice
   P1 -- Practice Program of Partial Class in C#  
@@ -157,9 +157,20 @@ Practice
   P3(SQL) -- Returning Table through a function
 -------------------------------------
 @DAY20
- Classroom
-  P1 -- 
-  P2(SQL) -- 
+ Classroom 
+  P1(SQL) -- Clustered and Unclustered Index 
 Practice
   P1 -- Passing Interface as a constructor Parameter
+-------------------------------------
+@DAY21
+ Classroom
+  P1(SQL) -- Introduction to Joins in Sql
+Practice
+  P1(SQL) -- differnet types of joins in SQL   
+-------------------------------------
+@DAY22
+ Classroom
+  P1(SQL) -- 
+Practice
+  P1(SQL) -- implementing Joins in stored procedure, function and view
 -------------------------------------
