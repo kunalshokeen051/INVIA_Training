@@ -1,0 +1,65 @@
+﻿@model WebApplication1.Models.Employee
+
+@{
+    ViewBag.Title = "CreateEmployee";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>CreateEmployee</h2>
+
+<div class="form-horizontal form-control">
+    @using (Html.BeginForm("CreateEmployee", "Employees", FormMethod.Post, new { name = "MyForm", id = "MyForm" }))
+    {
+        <div class="form-group">
+            @Html.LabelFor(m => m.Name, htmlAttributes: new { @class = "control-label rounded border-2 text-xl-start h3  mt-4 mb-2  py-2" })
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", id = "Name", placeholder = "Name" })
+            @Html.ValidationMessage("Fullname", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Age, htmlAttributes: new { @class = "control-label rounded border-2 text-xl-start h3  mt-4 mb-2  py-2" })
+            @Html.TextBoxFor(m => m.Age, new { @class = "form-control", id = "Age", placeholder = "Age" })
+            @Html.ValidationMessage("Age", new { @class = "text-danger" })
+        </div>
+
+        <input type="submit" value="Create" onclick="validator()" class="btn-outline-success btn btn-primary btn-block btn-lg px-4 me-md-2 text-white mt-4" />
+    }
+</div>
+    <div class="my-5">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 text-white">
+            @Html.ActionLink("Back to Table", "GetEmployees", "Employees", new { style = "color:#fff; text-decoration:none;" })
+        </button>
+    </div>
+
+
+@section scripts
+    {
+    <script type="text/javascript">
+        function validator() {
+            let x = document.getElementById("Name").value;
+            let y = document.getElementById("Age").value;
+
+            if (x == "" && y != "") {
+                if (y < 18 || y > 45) { }
+                alert("Name must be filled out");
+                event.preventDefault();
+            }
+            else if (y == "" && x != "") {
+                alert("Age must be filled out");
+                event.preventDefault();
+            }
+            else if (x == "" && y == "") {
+                alert("Name and Age must be filled out");
+                event.preventDefault();
+            }
+            else if(x != "" && y != "" && y >= 18 && y <= 45) {
+                myFunction();
+            }
+        }
+
+        function myFunction() {
+            alert("** Data has been added **");
+        }
+
+    </script>
+    }

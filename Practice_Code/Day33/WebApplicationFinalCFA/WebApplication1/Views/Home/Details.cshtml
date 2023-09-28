@@ -1,0 +1,54 @@
+﻿@model WebApplication1.Models.Student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Student Details</h2>
+
+<div class="">
+    <hr />
+    <div class="d-flex justify-content-between">
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Id)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Id)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Address)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Address)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Age)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Age)
+            </dd>
+
+        </dl>
+
+        <div class="" style="border:2px solid grey; width:200px; border-radius:10px">
+            <img src="https://cdn-icons-png.flaticon.com/512/2479/2479880.png" style="width:200px" alt="Profile.jpg" />
+        </div>
+    </div>
+</div>
+<p>
+    <button class="btn btn-outline-info"> @Html.ActionLink("Back to List", "StudentOperation")</button>
+</p>

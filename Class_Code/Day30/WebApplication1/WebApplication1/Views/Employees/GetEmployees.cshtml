@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "GetEmployees";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="">
+    <h2 class="heading m-4">List of Employees</h2>
+    <table class="table">
+        <tr>
+            <th class="bg-primary">ID</th>
+            <th class="bg-primary">Name</th>
+            <th class="bg-primary">Age</th>
+        </tr>
+       @foreach (var item in ViewBag.Employees)
+       {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Age</td>
+        </tr>
+       }
+    </table>
+</div>
+

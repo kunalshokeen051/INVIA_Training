@@ -1,0 +1,139 @@
+﻿@model WebApplication1.Models.Employee
+
+@{
+    ViewBag.Title = "CreateEmployee";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>CreateEmployee</h2>
+
+<div class="form-horizontal form-control">
+    @using (Html.BeginForm("CreateEmployee", "Employees", FormMethod.Post, new { name = "MyForm", id = "MyForm" }))
+    {
+        <div class="form-group">
+            @Html.LabelFor(m => m.Name, htmlAttributes: new { @class = "control-label rounded border-2 text-xl-start h3  mt-4 mb-2  py-2" })
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", id = "Name", placeholder = "Name" })
+            <span class="text-danger" id="NameError"></span>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Age, htmlAttributes: new { @class = "control-label rounded border-2 text-xl-start h3  mt-4 mb-2  py-2" })
+            @Html.TextBoxFor(m => m.Age, new { @class = "form-control", id = "Age", placeholder = "Age" })
+            <span class="text-danger" id="AgeError"></span>
+        </div>
+
+        <div class="form-group ">
+            @Html.LabelFor(m => m.Department, htmlAttributes: new { @class = "me-2 control-label rounded border-2 text-xl-start h3  mt-4 mb-2  py-2" })
+
+            @Html.DropDownList("Department", new List<SelectListItem> {
+
+           new SelectListItem { Text = "IT", Value = "IT" } ,
+
+           new SelectListItem   { Text = "Marketing", Value = "Marketing" },
+
+           new SelectListItem   { Text = "Sales", Value = "Sales" },
+
+           new SelectListItem   { Text = "HR", Value = "HR" }
+           })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Email, htmlAttributes: new { @class = "control-label rounded border-2 text-xl-start h3  mt-4 mb-2  py-2" })
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", id = "Email", placeholder = "Email" })
+            <span class="text-danger" id="EmailError"></span>
+        </div>
+
+            <h3 class="my-5 fw-bolder text-danger">Salary Components</h3>
+            <div class="form-control mt-4 d-flex gap-4 flex-wrap">
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Salary.Salary_Id, htmlAttributes: new { @class = "control-label rounded border-2 text-xl-start h3  mt-4 mb-2  py-2" })
+                    @Html.TextBoxFor(m => m.Salary.Salary_Id, new { @class = "form-control", id = "Salary ID", placeholder = "Salary ID" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Salary.CTC, htmlAttributes: new { @class = "control-label rounded border-2 text-xl-start h3  mt-4 mb-2  py-2" })
+                    @Html.TextBoxFor(m => m.Salary.CTC, new { @class = "form-control", id = "CTC", placeholder = "CTC" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Salary.Basic_Pay, htmlAttributes: new { @class = "control-label rounded border-2 text-xl-start h3  mt-4 mb-2  py-2" })
+                    @Html.TextBoxFor(m => m.Salary.Basic_Pay, new { @class = "form-control", id = "CTC", placeholder = "CTC" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Salary.ESIC, htmlAttributes: new { @class = "control-label rounded border-2 text-xl-start h3  mt-4 mb-2  py-2" })
+                    @Html.TextBoxFor(m => m.Salary.ESIC, new { @class = "form-control", id = "ESIC", placeholder = "ESIC" })
+                </div>
+                
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Salary.EPF, htmlAttributes: new { @class = "control-label rounded border-2 text-xl-start h3  mt-4 mb-2  py-2" })
+                    @Html.TextBoxFor(m => m.Salary.EPF, new { @class = "form-control", id = "EPF", placeholder = "EPF" })
+                </div> 
+                
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Salary.Allowance, htmlAttributes: new { @class = "control-label rounded border-2 text-xl-start h3  mt-4 mb-2  py-2" })
+                    @Html.TextBoxFor(m => m.Salary.Allowance, new { @class = "form-control", id = "Allowance", placeholder = "Allowance" })
+                </div>
+                
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Salary.Bonus, htmlAttributes: new { @class = "control-label rounded border-2 text-xl-start h3  mt-4 mb-2  py-2" })
+                    @Html.TextBoxFor(m => m.Salary.Bonus, new { @class = "form-control", id = "Bonus", placeholder = "Bonus" })
+                </div> 
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Salary.Income_Tax, htmlAttributes: new { @class = "control-label rounded border-2 text-xl-start h3  mt-4 mb-2  py-2" })
+                    @Html.TextBoxFor(m => m.Salary.Income_Tax, new { @class = "form-control", id = "IncomeTax", placeholder = "Income Tax" })
+                </div>
+                
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Salary.Mis_Deductions, htmlAttributes: new { @class = "control-label rounded border-2 text-xl-start h3  mt-4 mb-2  py-2" })
+                    @Html.TextBoxFor(m => m.Salary.Mis_Deductions, new { @class = "form-control", id = "Mis_Deductions", placeholder = "Misscellaneous Deductions" })
+                </div>
+            </div>
+
+        <input type="submit" value="Create" onclick="validator()" class="btn-outline-success btn btn-primary btn-block btn-lg px-4 me-md-2 text-white mt-4" />
+    }
+</div>
+<div class="my-5">
+    <button type="button" class="m btn btn-primary btn-lg px-4 me-md-2 text-white">
+        @Html.ActionLink("Back to Table", "GetEmployees", "Employees", new { style = "color:#fff; text-decoration:none;" })
+    </button>
+</div>
+
+
+@section scripts
+    {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Function to validate Name
+            $("#Name").on('keyup keydown', function () {
+                var nameValue = $(this).val();
+                if (nameValue.length < 3) {
+                    $("#NameError").text("Name must be at least 3 characters long.");
+                } else {
+                    $("#NameError").text("");
+                }
+            });
+
+            // Function to validate Age
+            $("#Age").on('keyup keydown', function () {
+                var ageValue = $(this).val();
+                if (isNaN(ageValue) || ageValue < 18 || ageValue > 45) {
+                    $("#AgeError").text("Age should be a number between 18 and 45.");
+                } else {
+                    $("#AgeError").text("");
+                }
+            });
+
+            // Function to validate Email
+            $("#Email").on('keyup keydown', function () {
+                var emailValue = $(this).val();
+                if (emailValue.trim() === "") {
+                    $("#EmailError").text("Email is required.");
+                } else {
+                    $("#EmailError").text("");
+                }
+            });
+        });
+    </script> 
+}

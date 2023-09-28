@@ -1,0 +1,26 @@
+﻿@model WebApplication1.Models.Employee
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Employee Details:</h4>
+    <hr />
+
+
+    @using (Html.BeginForm())
+    {
+        <div class="form-actions no-color">
+            <input type="submit" value="Search" class="btn btn-primary" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+
+    @using (Html.BeginForm())
+    {
+
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

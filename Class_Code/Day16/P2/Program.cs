@@ -1,4 +1,5 @@
-﻿namespace ExceptionHandlingExample
+﻿using System;
+namespace ExceptionHandlingExample
 {
 
 	public class OddNumberException : Exception
@@ -17,6 +18,7 @@
 			{
 				return "Get More Information from here: https://www.Example.com/help";
 			}
+			Delegate
 		}
 	}
 	

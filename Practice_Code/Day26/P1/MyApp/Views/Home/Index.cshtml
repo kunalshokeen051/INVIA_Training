@@ -1,0 +1,31 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <h1>Working</h1>
+        @helper MyMethod(string[] str)
+        {
+            <ul>
+                @foreach (var item in str)
+                {
+                    <li>@item</li>
+                }
+            </ul>
+        }
+    </div>
+    <h2>List-1</h2>
+    @MyMethod(new string[] { "kunal", "nilanshu", "pankaj" })
+    <br>
+    <h2>List-2</h2>
+    @MyMethod(new string[] { "kunal1", "nilanshu2", "pankaj3" })
+</body>
+</html>

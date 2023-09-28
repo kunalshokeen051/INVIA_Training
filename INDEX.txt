@@ -170,7 +170,100 @@ Practice
 -------------------------------------
 @DAY22
  Classroom
-  P1(SQL) -- 
+  P1(SQL) -- Joins in SP, Function and View
 Practice
   P1(SQL) -- implementing Joins in stored procedure, function and view
+  p2(SQL) -- Implementing triggers in SQL
 -------------------------------------
+@DAY23
+ Classroom
+  P1(SQL) -- Creating Triggers
+  P2(SQL) -- More triggers on DML Operations
+Practice
+  P1(SQL) -- triggers on DML Opertions and also using get date()
+-------------------------------------
+@DAY24
+ Classroom
+  P1(SQL) -- Cursor in SQL server
+  P2(SQL) --
+Practice
+  P1 -- implementation of static methods and how it differ from instance Methods
+  P2 -- implementation of Obselete Attribute in c# (Attribute in c#) 
+  P3(SQL) -- Cursor in stored procedure 
+-------------------------------------
+@DAY25
+ Classroom
+  P1(MVC) -- Introduction to MVC
+Practice
+  P1(MVC) -- Making a table and showing data using Views, Controller and Models in MVC
+-------------------------------------
+@DAY26
+ Classroom
+  P1(MVC) -- Routing in MVC5 and Understanding the architecture of MVC
+Practice
+  P1(MVC) -- 
+-------------------------------------
+@DAY27
+ Classroom
+  P1(MVC) -- Understanding controller, view, viewbag 
+Practice
+  P1(MVC) -- 
+-------------------------------------
+@DAY28
+ Classroom
+  P1(MVC) --  Class not held
+Practice
+  P1(MVC) -- viewbag, viewModel, viewData and adding new fonts in MVC5
+-------------------------------------
+@DAY29
+ Classroom
+  P1(MVC) --  Code first approach entity
+Practice
+  P1(MVC) -- Adding connection string,CRUD operations in Entity Framework 
+-------------------------------------
+@DAY30
+ Classroom
+  P1(MVC) --  Further topics on CFA
+Practice
+  P1(MVC) --practicing CFA
+-------------------------------------
+@DAY31
+ Classroom
+  P1(MVC) --  Further topics on CFA
+Practice
+  P1(MVC) --  practicing CFA
+-------------------------------------
+@DAY32
+ Classroom
+  P1(MVC) -- Further topics on CFA
+Practice
+  P1(MVC) -- practicing CFA
+-------------------------------------
+@DAY33
+ Classroom
+  P1(MVC) --  Database first approach(DFA)
+Practice
+  P1(MVC) -- Practicing webapp development using DFA
+-------------------------------------
+@DAY34
+ Classroom
+  P1(MVC) -- Theory of Join, Pagination using Jquery 
+Practice
+ -------NULL--------
+-------------------------------------
+@DAY35
+ Classroom
+  P1(MVC) -- Authentication and Authorization using Action Filter(Login/logOut Functionality)
+Practice
+  -------- Null -------
+-------------------------------------
+@DAY36
+ Classroom
+  P1(MVC) -- 
+Practice
+ Practice -- 
+-------------------------------------
+
+
+
+

@@ -1,0 +1,151 @@
+﻿
+@model  IEnumerable<WebApplication1.Models.EmployeeSalaryViewModel>
+
+@{
+    ViewBag.Title = "GetEmployees";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="container-fluid">
+
+    <div class="my-4" style="width:100%" ,"border:2px solid red">
+        <button type="button" class="mb-4 mx-2 btn btn-primary">@Html.ActionLink("Add", "CreateEmployee", "Employees", new { style = "color:#fff; text-decoration:none;" })</button>
+        <button type="button" class="mb-4 mx-2 btn btn-primary">@Html.ActionLink("Delete", "DeleteEmployee", "Employees", new { style = "color:#fff; text-decoration:none;" })</button>
+        <button type="button" class="mb-4 mx-2 btn btn-primary">@Html.ActionLink("update", "updateEmployee", "Employees", new { style = "color:#fff; text-decoration:none;" })</button>
+        <button type="button" class="mb-4 mx-2 btn btn-secondary">@Html.ActionLink("search", "searchEmployee", "Employees", new { style = "color:#fff; text-decoration:none;", id="searchButton" })</button>
+        <button type="button" class="mb-4 mx-2 btn btn-danger">@Html.ActionLink(" Homepage", "Index", "Employees", new { style = "color:#fff; text-decoration:none;" })</button>
+        <div class="dropdown">
+        </div>
+    </div>
+
+    <h2 class="heading m-4">List of Employees</h2>
+    <table class="table table-hover">
+        <tr>
+            <th class="p-3 mb-2 bg-dark text-white">ID</th>
+            <th class="p-3 mb-2 bg-dark text-white">Name</th>
+            <th class="p-3 mb-2 bg-dark text-white">Email</th>
+            <th class="p-3 mb-2 bg-dark text-white">Department</th>
+            <th class="p-3 mb-2 bg-dark text-white">Age</th>
+            <th class="p-3 mb-2 bg-dark text-white">CTC</th>
+            <th class="p-3 mb-2 bg-dark text-white">Basic Pay</th>
+            <th class="p-3 mb-2 bg-dark text-white">Allowance</th>
+            <th class="p-3 mb-2 bg-dark text-white">EPF</th>
+            <th class="p-3 mb-2 bg-dark text-white">ESIC</th>
+            <th class="p-3 mb-2 bg-dark text-white">Action</th>
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr class="">
+                <td class="p-3 mb-2 employee-id">@item.Employee.Employee_Id</td>
+                <td class="p-3 mb-2">@item.Employee.Name</td>
+                <td class="p-3 mb-2">@item.Employee.Email</td>
+                <td class="p-3 mb-2">@item.Employee.Department</td>
+                <td class="p-3 mb-2">@item.Employee.Age</td>
+                <td class="p-3 mb-2">@(item.Salary != null ? item.Salary.CTC : "Null")</td>
+                <td class="p-3 mb-2">@(item.Salary != null ? item.Salary.Basic_Pay : "Null")</td>
+                <td class="p-3 mb-2">@(item.Salary != null ? item.Salary.Allowance : "Null")</td>
+                <td class="p-3 mb-2">@(item.Salary != null ? item.Salary.EPF : "Null")</td>
+                <td class="p-3 mb-2">@(item.Salary != null ? item.Salary.ESIC : "Null")</td>
+                <td class="p-3 mb-2">
+                    <div class="action-buttons flex-column align-content-center justify-content-center" style="display:none;">
+                        @Html.ActionLink("Delete", "GetEmployees", "Employees",
+                        new { style = "color:#000;  text-decoration:none;", id = "delete", @class = "link-underline-opacity-0-hover  btn btn-info" })
+                        <br />
+                        @Html.ActionLink("Update", "GetEmployees", "Employees",
+                       new { style = "color:#000;  text-decoration:none;", id = "update", @class="btn btn-info" })
+                    </div>
+                </td>
+
+            </tr>
+        }
+    </table>
+</div>
+
+<!-- Bootstrap Modal start -->
+<div class="modal fade" id="searchModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form id="searchForm">
+                <div class="modal-header">
+                    <h5 class="modal-title">Search Employee</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="employeeId">Employee ID</label>
+                        <input type="text" class="form-control" id="employeeId" name="employeeId" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Bootstrap Modal End -->
+
+
+
+
+@section scripts
+    {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('tr').hover(
+                function () {
+                    $(this).find('.action-buttons').show();
+                    $(this).find('.action-buttons').addClass("d-flex");
+                },
+                function () {
+                    $(this).find('.action-buttons').hide();
+                    $(this).find('.action-buttons').removeClass("d-flex");
+
+                }
+            );
+
+            $('#delete').click(function () {
+                var row = $(this).closest('tr');
+                var employeeIdTd = row.find('.employee-id');
+                var employeeId = employeeIdTd.text();
+                var data = {
+                    employeeId: employeeId
+                };
+                alert(employeeId);
+                alert(JSON.stringify(data));
+                $.ajax({
+                    type: 'POST',
+                    url: '/Employee/DeleteEmployee',
+                    data: JSON.stringify(data),
+                    contentType: 'application/json',
+                    success: function (result) {
+                        if (result.success) {
+                            alert('Employee deleted successfully.');
+                            location.reload();
+                        }
+                    },
+                    error: function () {
+                        alert('An error occurred while deleting the employee.');
+                    }
+                });
+            });
+
+
+            //Model Code Start
+            $("#searchButton").click(function () {
+                $("#searchModal").modal("show");
+            });
+        });
+
+
+
+
+    </script>
+}

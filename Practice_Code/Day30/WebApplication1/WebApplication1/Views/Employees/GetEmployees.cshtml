@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "GetEmployees";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <h2 class="heading m-4">List of Employees</h2>
+    <button type="button" class="mb-4 mx-2 btn btn-success">@Html.ActionLink("Add Employees", "CreateEmployee", "Employees", new { style = "color:#fff; text-decoration:none;" })</button>
+    <button type="button" class="mb-4 mx-2 btn btn-info">Delete Employee</button>
+    <button type="button" class="mb-4 mx-2 btn btn-warning">Update Employee</button>
+    <button type="button" class="mb-4 mx-2 btn btn-danger">@Html.ActionLink(" Homepage", "Index", "Employees", new { style = "color:#fff; text-decoration:none;" })</button>
+    <table class="table table-hover">
+        <tr>
+            <th class="p-3 mb-2 bg-dark text-white">ID</th>
+            <th class="p-3 mb-2 bg-dark text-white">Name</th>
+            <th class="p-3 mb-2 bg-dark text-white">Age</th>
+        </tr>
+       @foreach (var item in ViewBag.Employees)
+       {
+        <tr>
+            <td class = "p-3 mb-2">@item.Id</td>
+            <td class = "p-3 mb-2">@item.Name</td>
+            <td class = "p-3 mb-2">@item.Age</td>
+        </tr>
+       }
+    </table>
+</div>
+

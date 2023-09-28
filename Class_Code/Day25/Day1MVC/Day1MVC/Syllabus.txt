@@ -1,0 +1,6 @@
+
+There are Multiple ways to pass data from Action(Function) to View.
+  
+  1. ViewBag,ViewData, TempData,ViewModel,Tuple, etc     **-- recommend: viewModel --**
+
+

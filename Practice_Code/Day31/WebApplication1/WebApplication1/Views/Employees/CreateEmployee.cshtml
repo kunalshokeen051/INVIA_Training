@@ -1,0 +1,29 @@
+﻿@model WebApplication1.Models.Employee
+
+@{
+    ViewBag.Title = "CreateEmployee";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>CreateEmployee</h2>
+
+<div class="form-horizontal form-control">
+    @using (Html.BeginForm("CreateEmployee", "Employees", FormMethod.Post))
+    {
+        @Html.Label("Name", "Name", new { @class = "form-control" })
+        @Html.TextBox("Name", null, new { @class = "form-control" })
+        <br />
+        <br />
+        @Html.Label("Age", "Age", new { @class = "form-control outline-none" })
+        @Html.TextBox("Age", null, new { @class = "form-control" })
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-primary btn-lg px-4 me-md-2 text-white mt-4" />
+            </div>
+        </div>
+    }
+</div>
+    <div class="my-5">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 text-white">@Html.ActionLink("Back to Table", "GetEmployees", "Employees", new { style = "color:#fff; text-decoration:none;" })</button>
+    </div>

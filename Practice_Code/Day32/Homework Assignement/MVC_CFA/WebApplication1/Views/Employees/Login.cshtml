@@ -1,0 +1,31 @@
+﻿@model WebApplication1.Models.Auth
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <h2>Login</h2>
+            @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "form-signin" }))
+            {
+                <div class="form-group mb-4">
+                    @Html.LabelFor(m => m.UserName, htmlAttributes: new { @class = "control-label" })
+                    @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", placeholder = "Username", required = "required" })
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your Details with anyone else.</small>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Password, htmlAttributes: new { @class = "control-label" })
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Password", required = "required" })
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+            }
+        </div>
+    </div>
+</div>
+
+

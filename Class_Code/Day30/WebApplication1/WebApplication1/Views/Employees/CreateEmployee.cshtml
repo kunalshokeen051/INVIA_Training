@@ -1,0 +1,26 @@
+﻿@model WebApplication1.Models.Employee
+
+@{
+    ViewBag.Title = "CreateEmployee";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>CreateEmployee</h2>
+
+    <div class="form-horizontal">
+        <form action="CreateEmployee"  method="post">
+            <label>name</label>
+            <input type="text" name="Name" id="Name" /> <br />
+
+            <label>Age</label>
+            <input type="number" name="Age" id="Age" /> <br />
+
+            <div>
+                <input type="submit" value="Save Employee" />
+            </div>
+        </form>
+    </div>
+
+<div>
+    @Html.ActionLink("Back to List", "GetEmployees")
+</div>

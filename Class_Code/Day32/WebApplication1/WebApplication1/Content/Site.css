@@ -1,0 +1,51 @@
+﻿@font-face {
+    font-family: "Roboto";
+    src: url(https://fonts.googleapis.com/css2?family=Roboto&display=swap) format("truetype");
+}
+
+@font-face {
+    font-family: "Dancing Script";
+    src: url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap) format("truetype");
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.script {
+    font-family: 'Dancing Script', sans-serif;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+
+h1{
+    font-size:5rem;
+    font-weight:bold;
+}
+
+h2{
+    font-size:3rem;
+    font-weight:bold;
+}
+h3{
+    font-size:2.5rem;
+}
+h4{
+    font-size:2rem;
+}
+
+------------------------------

@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "GetEmployees";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="container-fluid">
+
+    <div class="my-4" style="width:100%" ,"border:2px solid red">
+        <button type="button" class="mb-4 mx-2 btn btn-primary">@Html.ActionLink("Add", "CreateEmployee", "Employees", new { style = "color:#fff; text-decoration:none;" })</button>
+        <button type="button" class="mb-4 mx-2 btn btn-primary">@Html.ActionLink("Delete", "DeleteEmployee", "Employees", new { style = "color:#fff; text-decoration:none;" })</button>
+        <button type="button" class="mb-4 mx-2 btn btn-primary">@Html.ActionLink("update", "updateEmployee", "Employees", new { style = "color:#fff; text-decoration:none;" })</button>
+        <button type="button" class="mb-4 mx-2 btn btn-secondary">@Html.ActionLink("search", "searchEmployee", "Employees", new { style = "color:#fff; text-decoration:none;" })</button>
+        <button type="button" class="mb-4 mx-2 btn btn-danger">@Html.ActionLink(" Homepage", "Index", "Employees", new { style = "color:#fff; text-decoration:none;" })</button>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <h2 class="heading m-4">List of Employees</h2>
+    <table class="table table-hover">
+        <tr>
+            <th class="p-3 mb-2 bg-dark text-white">ID</th>
+            <th class="p-3 mb-2 bg-dark text-white">Name</th>
+            <th class="p-3 mb-2 bg-dark text-white">Age</th>
+        </tr>
+        @foreach (var item in ViewBag.Employees)
+        {
+            <tr>
+                <td class="p-3 mb-2">@item.Id</td>
+                <td class="p-3 mb-2">@item.Name</td>
+                <td class="p-3 mb-2">@item.Age</td>
+            </tr>
+        }
+    </table>
+</div>
+
+
+
+
+@section scripts
+    {
+    <script type="text/javascript">
+        
+
+    </script>
+}

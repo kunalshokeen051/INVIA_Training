@@ -1,0 +1,42 @@
+﻿@using WebApplication1.Models;
+
+@{
+    ViewBag.Title = "Search Results";
+    IEnumerable<Student> al = ViewBag.temp;
+}
+
+<h2>Results Count: @al.Count()</h2>
+
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @{
+                if (@al.Count() > 1)
+                {
+                    foreach (var student in al)
+                    {
+                        <tr>
+                            <td>student.Id</td>
+                            <td>student.Name</td>
+                            <td>student.Address</td>
+                            <td>student.Age</td>
+                        </tr>
+                    }
+                }
+           else
+            {
+                <tr class="h2">Data not Found</tr>
+            }
+            }
+        </tbody>
+    </table>
+</div>

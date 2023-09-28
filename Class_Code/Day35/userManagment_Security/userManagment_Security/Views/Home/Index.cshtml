@@ -1,0 +1,7 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Welcome To @Session["Usr"]</h2>
+
+<button> @Html.ActionLink("LogOut", "LogOut", "Home", new { @class = "btn btn-info" })</button>

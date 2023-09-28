@@ -1,0 +1,108 @@
+﻿
+Here's how you can modify your code to include pagination:
+
+html
+@model IEnumerable<WebApplication1.Models.Student>
+@{
+    ViewBag.Title = "StudentOperation";
+}
+
+<h2 class="my-4 h2">Student Records</h2>
+
+<button type="button" class="my-2 btn btn-primary" id="searchButton">Search</button>
+
+<table class="table table-hover table-bordered">
+    <tr class="">
+        <th class="p-3 mb-2 bg-dark text-white">ID</th>
+        <th class="p-3 mb-2 bg-dark text-white">Name</th>
+        <th class="p-3 mb-2 bg-dark text-white">Actions</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+
+            <td>
+                <button class="btn btn-outline-info">
+                    @Html.ActionLink("Edit", "UpdateEmployee", new { id = item.Id })
+                </button> |
+                <button class="btn btn-outline-secondary">
+                    @Html.ActionLink("Details", "Details", new { id = item.Id })
+                </button> |
+                <button class="btn btn-outline-warning">
+                    @Html.ActionLink("Delete", "DeleteEmployee", new { id = item.Id })
+                </button>
+            </td>
+        </tr>
+    }
+</table>
+
+<div id="pagination" class="text-center"></div>
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            var pageSize = 10; // Set your desired page size
+            var currentPage = 1;
+
+            function displayPage(page) {
+                // Calculate the range of students to display based on the page and page size
+                var startIndex = (page - 1) * pageSize;
+                var endIndex = startIndex + pageSize;
+
+                // Hide all rows
+                $('table tbody tr').hide();
+
+                // Display the rows for the current page
+                $('table tbody tr').slice(startIndex, endIndex).show();
+            }
+
+            function generatePagination() {
+                var totalStudents = @Model.Count(); // Get the total number of students
+                var totalPages = Math.ceil(totalStudents / pageSize);
+
+                var paginationHtml = '<nav aria-label="Page navigation example"><ul class="pagination">';
+                paginationHtml += '<li class="page-item"><a class="page-link" href="#" data-page="prev">Previous</a></li>';
+                for (var i = 1; i <= totalPages; i++) {
+                    paginationHtml += '<li class="page-item"><a class="page-link" href="#" data-page="' + i + '">' + i + '</a></li>';
+                }
+                paginationHtml += '<li class="page-item"><a class="page-link" href="#" data-page="next">Next</a></li>';
+                paginationHtml += '</ul></nav>';
+
+                $('#pagination').html(paginationHtml);
+            }
+
+            generatePagination(); // Generate initial pagination links
+            displayPage(currentPage); // Display the first page of students
+
+            // Pagination click event
+            $('#pagination').on('click', 'a', function () {
+                var page = $(this).data('page');
+                if (page === 'prev' && currentPage > 1) {
+                    currentPage--;
+                } else if (page === 'next' && currentPage < totalPages) {
+                    currentPage++;
+                } else if (!isNaN(page)) {
+                    currentPage = page;
+                }
+
+                displayPage(currentPage);
+            });
+
+            $('#searchButton').click(function () {
+                $('#searchModal').modal('show');
+            });
+
+            $('#close').click(function () {
+                $('#searchModal').modal('hide');
+            });
+        });
+    </script>
+}

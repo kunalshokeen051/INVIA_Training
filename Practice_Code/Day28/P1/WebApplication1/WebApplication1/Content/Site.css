@@ -1,0 +1,38 @@
+﻿@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    /* Set padding to keep content from hitting the edges */
+}
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+    /* Set padding to keep content from hitting the edges */
+}
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: bolder;
+    text-align:center;
+}
+h2{
+    font-size:3rem;
+    font-weight:bolder;
+}
+
+.script {
+    font-family: 'Dancing Script', cursive;
+}
+
+.gradient {
+    background: linear-gradient(#93F4ED, #A77AF2);
+    background-clip: text;
+    text-fill-color: transparent;
+    color:white;
+}
