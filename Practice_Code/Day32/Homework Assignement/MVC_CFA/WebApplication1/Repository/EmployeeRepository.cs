@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Web.Mvc;
 using WebApplication1.Database;
 using WebApplication1.Models;
 
@@ -35,7 +36,7 @@ namespace WebApplication1.Repository
         {
             var employeeSalaries = from e in db.employees
                                    join s in db.Salaries
-                                   on e.Employee_Id equals s.Employee_id into salaryGroup
+                                   on e.Employee_Id  equals s.Salary_Id into salaryGroup
                                    from s in salaryGroup.DefaultIfEmpty()
                                    select new EmployeeSalaryViewModel
                                    {
@@ -51,16 +52,45 @@ namespace WebApplication1.Repository
             return employee;
         }
 
-        int IEmployeeRepository.UpdateEmployee(int Id,string Name)
+        int IEmployeeRepository.UpdateEmployee(Employee editedData)
         {
-            var employee = db.employees.Where(x => x.Employee_Id == Id).FirstOrDefault();
-            if (employee != null)
+            try
             {
-                employee.Name = Name;
-                db.SaveChanges();
-                return 1;
+                var existingEmployee = db.employees.Find(editedData.Employee_Id);
+
+                if (existingEmployee != null)
+                {
+                  
+                    existingEmployee.Name = editedData.Name;
+                    existingEmployee.Email = editedData.Email;
+                    existingEmployee.Department = editedData.Department;
+                    existingEmployee.Age = editedData.Age;
+
+               
+                    if (existingEmployee.Salary == null)
+                    {
+                        existingEmployee.Salary = new Salary();
+                    }
+                    existingEmployee.Salary.CTC = editedData.Salary.CTC;
+                    existingEmployee.Salary.Basic_Pay = editedData.Salary.Basic_Pay;
+                    existingEmployee.Salary.Allowance = editedData.Salary.Allowance;
+                    existingEmployee.Salary.EPF = editedData.Salary.EPF;
+                    existingEmployee.Salary.ESIC = editedData.Salary.ESIC;
+
+                   
+                    db.SaveChanges();
+
+                    return 1; 
+                }
+                else
+                {
+                    return 0;
+                }
             }
-            return 0;
+            catch (Exception ex)
+            {
+                return -1; 
+            }
         }
     }
 }

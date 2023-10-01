@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black: #1B1A1B;
+--white: #ffffff;
+}
+
+@layer components {
+  .btn-primary {
+    @apply py-2 px-4 bg-gr_1 cursor-pointer flex justify-center hover:text-slate-600 items-center text-white font-semibold rounded-lg shadow-md hover:bg-gr_1 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transition-all duration-300;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--black);
+  color: var(--white);
+  scroll-behavior: smooth;
+}
+
+.shadow-b{
+  box-shadow: 0px 0px 100px 2px rgba(127, 17, 224, 0.4);
+}
+
+input{
+  color: black;
+}
+
+.calli {
+  font-family: "Dancing Script", cursive;
+}
+
+.slider {
+  display: inline-block;
+  height: 4rem;
+  line-height: 2rem;
+  white-space: nowrap;
+  padding-right: 100%;
+  box-sizing: content-box;
+
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+}
+
+.slider .item{
+  display: inline-block;
+
+  padding: 0 2rem;
+  font-size: 2rem;
+  color: white;   
+}
+
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+
+
+
+.loader {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: load 8s cubic-bezier(1, -0.01, 0.18, 0.72) infinite forwards;
+  background: linear-gradient(0deg, #FF018B,#DF01E9);
+}
+
+@keyframes load {
+  0% {
+    transform: scale(30%) rotate(0deg);
+  }
+  20% {
+    transform: scale(50%) rotate(190deg);
+  }
+  40% {
+    transform: scale(100%) rotate(280deg);
+  }
+  60% {
+    transform: scale(150%) rotate(470deg);
+  }
+  80% {
+    transform: scale(1000%) rotate(760deg);
+  }
+  100% {
+    transform: scale(1000%) rotate(960deg);
+  }
+}

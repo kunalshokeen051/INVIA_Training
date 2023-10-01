@@ -123,9 +123,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202309241519171_v1.cs" />
-    <Compile Include="Migrations\202309241519171_v1.designer.cs">
-      <DependentUpon>202309241519171_v1.cs</DependentUpon>
+    <Compile Include="Migrations\202309280643536_v1.cs" />
+    <Compile Include="Migrations\202309280643536_v1.designer.cs">
+      <DependentUpon>202309280643536_v1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Employee.cs" />
@@ -190,7 +190,7 @@
     <Content Include="Views\Employees\GetEmployees.cshtml" />
     <Content Include="Views\Employees\Index.cshtml" />
     <Content Include="Views\Employees\Login.cshtml" />
-    <Content Include="Views\Employees\DeleteEmployee.cshtml" />
+    <Content Include="Views\Employees\SearchEmployee.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -224,8 +224,8 @@
     <Content Include="Scripts\jquery-3.7.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202309241519171_v1.resx">
-      <DependentUpon>202309241519171_v1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202309280643536_v1.resx">
+      <DependentUpon>202309280643536_v1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

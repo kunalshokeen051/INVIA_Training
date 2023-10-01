@@ -13,8 +13,6 @@ namespace WebApplication1.Models
         [Key]
         public int Salary_Id { get; set; }
 
-        public int Employee_id { get; set; }
-
         [Required]
         public long CTC { get; set; }
 

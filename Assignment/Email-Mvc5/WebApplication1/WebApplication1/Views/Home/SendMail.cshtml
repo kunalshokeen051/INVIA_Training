@@ -1,0 +1,153 @@
+﻿@model WebApplication1.Models.EmailModel
+
+@{
+    ViewBag.Title = "SendMail";
+}
+
+
+<h2>Mail Server</h2>
+
+@using (Html.BeginForm("SendMail", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <table>
+
+        <tr>
+            <td style="width:80px">To:</td>
+            <td>@Html.TextBoxFor(m => m.To, new{@class= "form-control" })</td>
+        </tr>
+
+        <tr>
+            <td>Subject:</td>
+            <td>@Html.TextBoxFor(m => m.Subject, new { @class = "form-control" })</td>
+        </tr>
+
+
+        <tr>
+            <td>Body:</td>
+            <td>@Html.TextAreaFor(m => m.Body, new { rows = "5", cols = "200", id="Body" ,@class="form-control" })</td>
+        </tr>
+
+        <tr>
+            <td>File Attachment:</td>
+            <td>@Html.TextBoxFor(m => m.Attachment, new { type = "file", id = "Attachment",  @class = "form-control"  })</td>
+        </tr>
+
+        <tr>
+            <td>Email:</td>
+            <td>@Html.TextBoxFor(m => m.Email, new { @class = "form-control" })</td>
+        </tr>
+
+        <tr>
+            <td>Password:</td>
+            <td>@Html.TextBoxFor(m => m.Password, new { type = "password", @class = "form-control" })</td>
+        </tr>
+
+        <tr>
+            <td></td>
+
+            <td>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </td>
+
+        </tr>
+
+    </table>
+
+
+
+            <h5 id="wordCount"></h5>
+
+    <br />
+
+    <div class="alert alert-info w-100 d-none" id="alert" role="alert" style="color:green">@ViewBag.Message</div>
+}
+
+    @*  The blur event occurs when the < input > field loses focus *@
+
+
+@section scripts
+    {
+    <script>
+        $(document).ready(function () {
+
+            $('#Attachment').change(function () {
+                var maxFileSize = 5 * 1024 * 1024;         // Max: 5MB
+                var fileSize = this.files[0].size;
+
+                if (fileSize > maxFileSize) {
+                    alert('Attachment size should be less than 5MB.');
+                    $('#Attachment').val('');
+                }
+            });
+
+
+            $('#Body').on('input', function () {
+                var maxWords = 50;
+                var words = this.value.split(/\s+/).filter(function (word) {
+                    return word.length > 0;
+                });
+                var currentWordCount = words.length;
+
+                $('#wordCount').text(currentWordCount + ' words');
+
+                if (currentWordCount > maxWords) {
+                    $('#wordCount').css('color', 'red');
+                    alert("Message Count should be less than 50 words.")
+                } else {
+                    $('#wordCount').css('color', 'black');
+                }
+            });
+
+        $('#To').blur(function () {
+            if ($(this).val().trim() == '') {
+                alert('To field is required.');
+            }
+        });
+
+
+        $('#Subject').blur(function () {
+            if ($(this).val().trim() == '') {
+                alert('Subject field is required.');
+            }
+        });
+
+
+          $('#Email').blur(function () {
+            var emailValue = $(this).val().trim();
+
+            if (emailValue == '' || emailValue.indexOf('.') == -1) {
+                alert('Email is not in a valid format.');
+            }
+        });
+
+        $('#Password').blur(function () {
+            if ($(this).val().trim() == '') {
+                alert('Password field is required.');
+            }
+        });
+
+           function checkAndViewMessage() {
+                if ('@ViewBag.Message' != '') {
+                   
+                    $('#alert').removeClass('d-none');
+                    $('input').val('');
+                    $('text-area').val('');
+                } else {
+                
+                    $('#alert').addClass('d-none');
+                }
+            }
+
+           
+            checkAndViewMessage();
+
+           
+            var intervalId = setInterval(checkAndViewMessage, 1000);
+
+
+
+        });
+    </script>
+
+
+}

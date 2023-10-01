@@ -16,7 +16,7 @@ namespace WebApplication1.Repository
         int CreateEmployee(Employee emp);
 
         // to UPDATE employee record
-        int UpdateEmployee(int id, string name);
+        int UpdateEmployee(Employee e);
 
         // to DELETE employee record
         int DeleteEmployee(int id);      

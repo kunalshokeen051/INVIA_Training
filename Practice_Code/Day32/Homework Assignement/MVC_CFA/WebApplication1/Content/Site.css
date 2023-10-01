@@ -46,7 +46,7 @@ h4{
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.animated-container.show {
+.animated-container .show {
    opacity: 1;
    transform: translateY(0);
 }

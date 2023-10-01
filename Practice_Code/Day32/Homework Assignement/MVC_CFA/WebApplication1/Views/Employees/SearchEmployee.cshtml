@@ -1,0 +1,22 @@
+﻿@model  WebApplication1.Models.EmployeeSalaryViewModel
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>CTC</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+          
+                <tr>
+                    <td>@Model =>  Model.Employee.Employee_Id</td>
+                    <td>@Model => Model.Employee.Name</td>
+                    <td>@Model => Model.Salary.CTC</td>
+                </tr>
+        </tbody>
+    </table>
+

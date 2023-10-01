@@ -15,7 +15,6 @@ namespace userManagment_Security.Database
         }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<User> Users { get; set; }
-
-        public System.Data.Entity.DbSet<userManagment_Security.Models.LoginViewModel> LoginViewModels { get; set; }
+        public DbSet<LoginViewModel> LoginViewModels { get; set; }
     }
 }

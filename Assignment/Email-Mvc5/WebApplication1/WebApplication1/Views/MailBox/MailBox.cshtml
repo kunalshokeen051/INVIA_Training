@@ -1,0 +1,33 @@
+﻿@model List<MimeKit.MimeMessage>
+
+@{
+    ViewBag.Title = "MailBox";
+}
+
+<h2>MailBox</h2>
+
+<br />
+
+<h5>My Inbox:</h5>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Subject</th>
+            <th>From</th>
+            <th>Date</th>
+            <th>Body</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var message in Model)
+        {
+            <tr>
+                <td>@message.Subject</td>
+                <td>@message.From</td>
+                <td>@message.Date.LocalDateTime</td>
+                <td>@Html.Raw(message.HtmlBody)</td>
+            </tr>
+        }
+    </tbody>
+</table>

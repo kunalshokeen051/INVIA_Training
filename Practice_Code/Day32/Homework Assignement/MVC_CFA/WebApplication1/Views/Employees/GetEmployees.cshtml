@@ -10,17 +10,20 @@
 
 <div class="container-fluid">
 
-    <div class="my-4" style="width:100%" ,"border:2px solid red">
+    <div class="my-4" style="width:100%">
         <button type="button" class="mb-4 mx-2 btn btn-primary">@Html.ActionLink("Add", "CreateEmployee", "Employees", new { style = "color:#fff; text-decoration:none;" })</button>
         <button type="button" class="mb-4 mx-2 btn btn-primary">@Html.ActionLink("Delete", "DeleteEmployee", "Employees", new { style = "color:#fff; text-decoration:none;" })</button>
         <button type="button" class="mb-4 mx-2 btn btn-primary">@Html.ActionLink("update", "updateEmployee", "Employees", new { style = "color:#fff; text-decoration:none;" })</button>
-        <button type="button" class="mb-4 mx-2 btn btn-secondary">@Html.ActionLink("search", "searchEmployee", "Employees", new { style = "color:#fff; text-decoration:none;", id="searchButton" })</button>
+        <button type="button" class="mb-4 mx-2 btn btn-secondary" style="color:#fff; text-decoration:none;" id="searchButton">Search</button>
         <button type="button" class="mb-4 mx-2 btn btn-danger">@Html.ActionLink(" Homepage", "Index", "Employees", new { style = "color:#fff; text-decoration:none;" })</button>
-        <div class="dropdown">
-        </div>
+        <button type="button" id="save-changes" class="mb-4 mx-2 btn btn-secondary" style="color:#fff; text-decoration:none;">Save</button>
     </div>
+</div>
 
-    <h2 class="heading m-4">List of Employees</h2>
+
+<h2 class="heading m-4">List of Employees</h2>
+
+<div>
     <table class="table table-hover">
         <tr>
             <th class="p-3 mb-2 bg-dark text-white">ID</th>
@@ -39,41 +42,44 @@
 
         @foreach (var item in Model)
         {
+
             <tr class="">
-                <td class="p-3 mb-2 employee-id">@item.Employee.Employee_Id</td>
-                <td class="p-3 mb-2">@item.Employee.Name</td>
-                <td class="p-3 mb-2">@item.Employee.Email</td>
-                <td class="p-3 mb-2">@item.Employee.Department</td>
-                <td class="p-3 mb-2">@item.Employee.Age</td>
-                <td class="p-3 mb-2">@(item.Salary != null ? item.Salary.CTC : "Null")</td>
-                <td class="p-3 mb-2">@(item.Salary != null ? item.Salary.Basic_Pay : "Null")</td>
-                <td class="p-3 mb-2">@(item.Salary != null ? item.Salary.Allowance : "Null")</td>
-                <td class="p-3 mb-2">@(item.Salary != null ? item.Salary.EPF : "Null")</td>
-                <td class="p-3 mb-2">@(item.Salary != null ? item.Salary.ESIC : "Null")</td>
+                <td class="p-3 mb-2 employee-id" name="employeeID">@item.Employee.Employee_Id</td>
+                <td class="p-3 mb-2 editable" name="Name">@item.Employee.Name</td>
+                <td class="p-3 mb-2 editable" name="Email">@item.Employee.Email</td>
+                <td class="p-3 mb-2" name="Department">@item.Employee.Department</td>
+                <td class="p-3 mb-2 editable" name="Age">@item.Employee.Age</td>
+                <td class="p-3 mb-2 editable" name="CTC">@((item.Salary != null) ? item.Salary.CTC : "Null")</td>
+                <td class="p-3 mb-2 editable" name="basic">@((item.Salary != null) ? item.Salary.Basic_Pay : "Null")</td>
+                <td class="p-3 mb-2 editable" name="Allowance">@((item.Salary != null) ? item.Salary.Allowance : "Null")</td>
+                <td class="p-3 mb-2 editable" name="EPF">@((item.Salary != null) ? item.Salary.EPF : "Null")</td>
+                <td class="p-3 mb-2 editable" name="ESIC">@((item.Salary != null) ? item.Salary.ESIC : "Null")</td>
                 <td class="p-3 mb-2">
-                    <div class="action-buttons flex-column align-content-center justify-content-center" style="display:none;">
-                        @Html.ActionLink("Delete", "GetEmployees", "Employees",
-                        new { style = "color:#000;  text-decoration:none;", id = "delete", @class = "link-underline-opacity-0-hover  btn btn-info" })
-                        <br />
-                        @Html.ActionLink("Update", "GetEmployees", "Employees",
-                       new { style = "color:#000;  text-decoration:none;", id = "update", @class="btn btn-info" })
+                    <div class="action-buttons align-content-center justify-content-center" style="display:none;">
+                        <button class="btn btn-link text-success update-button">Update</button>
                     </div>
                 </td>
-
             </tr>
+
+
         }
     </table>
 </div>
 
+
+
+
+<!-- Bootstrap Modal start -->
 <!-- Bootstrap Modal start -->
 <div class="modal fade" id="searchModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <form id="searchForm">
+                <!-- Add id attribute to the form -->
                 <div class="modal-header">
                     <h5 class="modal-title">Search Employee</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <span aria-hidden="true" class="close_btn p-2">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
@@ -83,21 +89,33 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary close_btn" data-dismiss="modal">Close</button>
                     <button type="submit" class="btn btn-primary">Search</button>
                 </div>
             </form>
+
+            <!--div to display search results -->
+            <div id="searchResults">
+                <!--search results here -->
+            </div>
         </div>
     </div>
 </div>
 <!-- Bootstrap Modal End -->
 
 
+<div class="alert alert-warning d-none" id="alertContainer" role="alert">
+    Current Row is Editable Now ! 😊
+</div>
 
+@*-------|  parseInt function convert text to numeric |--------*@
 
 @section scripts
     {
     <script type="text/javascript">
+        var row;
+        var editableRow;
+
         $(document).ready(function () {
             $('tr').hover(
                 function () {
@@ -107,45 +125,92 @@
                 function () {
                     $(this).find('.action-buttons').hide();
                     $(this).find('.action-buttons').removeClass("d-flex");
-
                 }
             );
+            $('#searchButton').click(function () {
+                $('#searchModal').modal('show');
+            });
 
-            $('#delete').click(function () {
-                var row = $(this).closest('tr');
-                var employeeIdTd = row.find('.employee-id');
-                var employeeId = employeeIdTd.text();
-                var data = {
-                    employeeId: employeeId
-                };
-                alert(employeeId);
-                alert(JSON.stringify(data));
+            $('.close_btn').click(function () {
+                $('#searchModal').modal('hide');
+            });
+
+            $('.update-button').click(function () {
+
+                $('#alertContainer').removeClass('d-none');
+                if (editableRow) {
+                    closeEditableRow();
+                }
+                row = $(this).closest('tr');
+                row.find('.editable').attr('contenteditable', true).addClass('editable-cell');
+                row.find('.save-changes').removeClass('d-none');
+                editableRow = row;
+            });
+
+            $('#searchForm').submit(function (event) {
+                event.preventDefault();
+
+                var employeeId = $('#employeeId').val();
+
                 $.ajax({
-                    type: 'POST',
-                    url: '/Employee/DeleteEmployee',
-                    data: JSON.stringify(data),
-                    contentType: 'application/json',
-                    success: function (result) {
-                        if (result.success) {
-                            alert('Employee deleted successfully.');
-                            location.reload();
-                        }
+                    url: '/Employees/SearchEmployee', 
+                    type: 'GET',
+                    data: { employeeId: employeeId },
+                    success: function (data) {
+                        $('#searchResults').html(data);
                     },
                     error: function () {
-                        alert('An error occurred while deleting the employee.');
+                        alert('An error occurred while searching.');
                     }
                 });
+
+
+
             });
 
 
-            //Model Code Start
-            $("#searchButton").click(function () {
-                $("#searchModal").modal("show");
+            $('#save-changes').click(function () {
+                $('#alertContainer').addClass('d-none');
+                var editedData = {
+                    employeeId: parseInt(row.find('[name="employeeID"]').text()) || 0,
+                    name: row.find('.editable[name="Name"]').text(),
+                    email: row.find('.editable[name="Email"]').text(),
+                    department: row.find('[name="Department"]').text(),
+                    age: row.find('.editable[name="Age"]').text(),
+                    salary: {
+                        ctc: parseInt(row.find('.editable[name="CTC"]').text()) || 0,
+                        basicPay: parseInt(row.find('.editable[name="basic"]').text()) || 0,
+                        allowance: parseInt(row.find('.editable[name="Allowance"]').text()) || 0,
+                        epf: parseInt(row.find('.editable[name="EPF"]').text()) || 0,
+                        esic: parseInt(row.find('.editable[name="ESIC"]').text()) || 0
+                    }
+                };
+
+                console.log(editedData);
+
+                $.ajax({
+                    url: '/Employees/UpdateEmployee',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(editedData),
+                    success: function () {
+                        row.find('.save-changes').addClass('d-none');
+                        alert("*** Row Updated Successfully ***");
+                        alert(success);
+                    }
+                });
+
+                alert("request send");
             });
+
+
         });
 
-
-
+        function closeEditableRow() {
+            editableRow.find('.editable').attr('contenteditable', false).removeClass('editable-cell');
+            editableRow.find('.save-changes').addClass('d-none');
+        }
 
     </script>
 }
+

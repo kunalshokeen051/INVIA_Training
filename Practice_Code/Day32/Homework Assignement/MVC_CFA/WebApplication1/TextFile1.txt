@@ -1,1 +1,49 @@
-﻿
+﻿To ensure that the edited content persists after a refresh, you'll need to implement a way to save the changes made by the user. You can achieve this by updating your UpdateEmployee action to store the changes in your data source. Here's how you can modify the UpdateEmployee action to save the changes:
+
+1. Modify the UpdateEmployee action in your controller:
+
+csharp
+[HttpPost]
+public ActionResult UpdateEmployee(int empId, string field, string newValue)
+{
+
+    using (var dbContext = new YourDbContext())
+    {
+        var employee = dbContext.Employees.Find(empId);
+        if (employee != null)
+        {
+            // Update the appropriate field
+            if (field == "emp_name")
+            {
+                employee.emp_name = newValue;
+            }
+            else if (field == "emp_age")
+            {
+                if (int.TryParse(newValue, out int newAge))
+                {
+                    employee.emp_age = newAge;
+                }
+                else
+                {
+                    // Handle invalid age input
+                    return Json(new { success = false, message = "Invalid age input." });
+                }
+            }
+
+            dbContext.SaveChanges();
+            return Json(new { success = true });
+        }
+        else
+        {
+            return Json(new { success = false, message = "Employee not found." });
+        }
+    }
+}
+
+
+In this modified action, it first finds the employee by empId, then updates the appropriate field based on the field parameter and saves the changes using Entity Framework. Make sure to replace YourDbContext with your actual DbContext.
+
+2. Handle error cases:
+   In the modified UpdateEmployee action, it returns JSON results indicating success or failure, along with a message in case of errors. You can handle these messages and display them on your view to provide feedback to the user.
+
+With these modifications, when a user edits a field, clicks the "Update" button, and refreshes the page, the changes should persist because they are saved to the data source. If there are any errors during the update, you can display appropriate messages to the user.

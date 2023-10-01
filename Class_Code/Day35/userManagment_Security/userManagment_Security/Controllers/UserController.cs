@@ -51,7 +51,7 @@ namespace userManagment_Security.Controllers
 
             else
             {
-                return Content("Error");
+                return Content("Error: User Not Found");
             }
         }
 

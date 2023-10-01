@@ -1,6 +1,7 @@
 ﻿
 using Microsoft.Ajax.Utilities;
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Web.Mvc;
 using WebApplication1.Models;
@@ -16,6 +17,7 @@ namespace WebApplication1.Controllers
         [HttpGet]
         public ActionResult Index()
         {
+           
             return View();
         } 
         
@@ -36,7 +38,6 @@ namespace WebApplication1.Controllers
         {
             Salary salary = new Salary
             {
-                Salary_Id = e.Salary.Salary_Id,
                 CTC = e.Salary.CTC,
                 Basic_Pay = e.Salary.Basic_Pay,
                 ESIC = e.Salary.ESIC,
@@ -69,38 +70,46 @@ namespace WebApplication1.Controllers
            IEnumerable<EmployeeSalaryViewModel> MyList= empRepo.GetEmployees();  
            
             return View(MyList);
-        }        
+        }
 
-        public void  SearchEmployee()
-        {
+       
+        public ActionResult SearchEmployee(int employeeId)
+        {   
+            var searchResult = empRepo.SearchEmployees(employeeId);
 
+            return PartialView("SearchEmployee", searchResult);
         }
 
        [HttpPost]
-       public JsonResult DeleteEmployee( int employeeId)
+       public ActionResult DeleteEmployee( int employeeId)
         { 
             var status = empRepo.DeleteEmployee(employeeId);
 
             if (status == 1)
             {
-                return Json(new { success = true, message = "Employee deleted successfully." });
+                return Content("<script>alert('Employee Successfully Deleted')</script>");
             }
             else
             {
-                return Json(new { success = false, message = "Employee not found." });
+                return Content("<script>alert('Error Occured !')</script>");
+
             }
         }
 
-        public void UpdateEmployee(int id, string name)
-        {
-            var employee = empRepo.UpdateEmployee(id, name);
-            if (employee == 0)
-            {
-                Response.Write("Employee not found");
-            }
-            else
-                Response.Write("Employee data successfully updated");
-        }
-       
+
+        [HttpPost]
+            public ActionResult UpdateEmployee(Employee editedData)
+                {
+               int Status = empRepo.UpdateEmployee(editedData);
+                 
+                 if (Status == 1)
+                 {
+                     return Json(new { success = true });
+                 }
+                 else
+                 {
+                     return Json(new { success = false });
+                 }
+            } 
     }
 }
